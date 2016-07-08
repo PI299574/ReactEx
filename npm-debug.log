@@ -1,0 +1,148 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node',
+1 verbose cli   'server.js',
+1 verbose cli   '--Allow-All' ]
+2 info using npm@3.8.6
+3 info using node@v5.11.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node
+8 silly fetchPackageMetaData server.js
+9 silly fetchNamedPackageData node
+10 silly mapToRegistry name node
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'node',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   name: 'node',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/node
+15 silly fetchNamedPackageData server.js
+16 silly mapToRegistry name server.js
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'server.js',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   name: 'server.js',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/server.js
+21 verbose request uri https://registry.npmjs.org/server.js
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 9:35:50 AM
+24 verbose request id 880951e7573835cf
+25 http request GET https://registry.npmjs.org/server.js
+26 verbose request uri https://registry.npmjs.org/node
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 9:35:50 AM
+29 verbose etag "4RB0I162TMBFF7IWMPCBRMD3L"
+30 http request GET https://registry.npmjs.org/node
+31 http 404 https://registry.npmjs.org/server.js
+32 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 verbose headers   etag: '"CVYJYZE2RZEHXWSS63UYRNG0U"',
+32 verbose headers   'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=0',
+32 verbose headers   'content-length': '416',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Thu, 07 Jul 2016 09:35:52 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1467884152.418260,VS0,VE226',
+32 verbose headers   vary: 'Accept-Encoding' }
+33 silly get cb [ 404,
+33 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 silly get     etag: '"CVYJYZE2RZEHXWSS63UYRNG0U"',
+33 silly get     'content-type': 'application/json',
+33 silly get     'cache-control': 'max-age=0',
+33 silly get     'content-length': '416',
+33 silly get     'accept-ranges': 'bytes',
+33 silly get     date: 'Thu, 07 Jul 2016 09:35:52 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-sin6922-SIN',
+33 silly get     'x-cache': 'MISS',
+33 silly get     'x-cache-hits': '0',
+33 silly get     'x-timer': 'S1467884152.418260,VS0,VE226',
+33 silly get     vary: 'Accept-Encoding' } ]
+34 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/server.js
+34 silly fetchPackageMetaData     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+34 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+34 silly fetchPackageMetaData     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+34 silly fetchPackageMetaData     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:199:22)
+34 silly fetchPackageMetaData     at emitTwo (events.js:100:13)
+34 silly fetchPackageMetaData     at Request.emit (events.js:185:7)
+34 silly fetchPackageMetaData     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+34 silly fetchPackageMetaData     at emitOne (events.js:95:20)
+34 silly fetchPackageMetaData     at Request.emit (events.js:182:7)
+34 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:963:12)
+34 silly fetchPackageMetaData  error for server.js { [Error: Registry returned 404 for GET on https://registry.npmjs.org/server.js] pkgid: 'server.js', statusCode: 404, code: 'E404' }
+35 http 304 https://registry.npmjs.org/node
+36 verbose headers { date: 'Thu, 07 Jul 2016 09:35:52 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   etag: '"4RB0I162TMBFF7IWMPCBRMD3L"',
+36 verbose headers   age: '90',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+36 verbose headers   'x-cache': 'HIT',
+36 verbose headers   'x-cache-hits': '3',
+36 verbose headers   'x-timer': 'S1467884152.744956,VS0,VE0',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 silly get cb [ 304,
+37 silly get   { date: 'Thu, 07 Jul 2016 09:35:52 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     'cache-control': 'max-age=300',
+37 silly get     etag: '"4RB0I162TMBFF7IWMPCBRMD3L"',
+37 silly get     age: '90',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-sin6926-SIN',
+37 silly get     'x-cache': 'HIT',
+37 silly get     'x-cache-hits': '3',
+37 silly get     'x-timer': 'S1467884152.744956,VS0,VE0',
+37 silly get     vary: 'Accept-Encoding' } ]
+38 verbose etag https://registry.npmjs.org/node from cache
+39 verbose get saving node to /home/vagrant/.npm/registry.npmjs.org/node/.cache.json
+40 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+41 silly rollbackFailedOptional Starting
+42 silly rollbackFailedOptional Finishing
+43 silly runTopLevelLifecycles Starting
+44 silly runTopLevelLifecycles Finishing
+45 silly install printInstalled
+46 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/server.js
+46 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+46 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+46 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:199:22)
+46 verbose stack     at emitTwo (events.js:100:13)
+46 verbose stack     at Request.emit (events.js:185:7)
+46 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+46 verbose stack     at emitOne (events.js:95:20)
+46 verbose stack     at Request.emit (events.js:182:7)
+46 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:963:12)
+47 verbose statusCode 404
+48 verbose pkgid server.js
+49 verbose cwd /vagrant/reactExercise
+50 error Linux 4.2.0-22-generic
+51 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "node" "server.js" "--Allow-All"
+52 error node v5.11.1
+53 error npm  v3.8.6
+54 error code E404
+55 error 404 Registry returned 404 for GET on https://registry.npmjs.org/server.js
+56 error 404
+57 error 404 'server.js' is not in the npm registry.
+58 error 404 You should bug the author to publish it (or use the name yourself!)
+59 error 404 Note that you can also install from a
+60 error 404 tarball, folder, http url, or git url.
+61 verbose exit [ 1, true ]

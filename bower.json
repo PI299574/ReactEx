@@ -1,0 +1,22 @@
+{
+  "name": "reactExercise",
+  "homepage": "https://github.com/stackroute/StackRoute-Vagrant-Node5-Mongo3.2",
+  "authors": [
+    "PI299574 <kumarpintu1305@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.2.0",
+    "babel": "*",
+    "bootstrap": "^3.3.6"
+  }
+}
