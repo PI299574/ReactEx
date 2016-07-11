@@ -1,9 +1,31 @@
 var ResultItems=React.createClass({
   render:function(){
-    console.log(this.props.Director);
+    console.log("L3 Poster"+this.props.Poster);
+    console.log("L3 Title" +this.props.Title);
     return(
-      //<li>{this.props.searchResults.response.Director}</li>
-<li> {this.props.Director}</li>
+//<li>{this.props.searchResults.response.Director}</li>
+<div>
+<li>{this.props.Title}</li>
+<li>{this.props.Year}</li>
+<li>{this.props.Rated}</li>
+<li>{this.props.Released}</li>
+<li>{this.props.Genre}</li>
+<li>{this.props.Runtime}</li>
+<li>{this.props.Director}</li>
+<li>{this.props.Writer}</li>
+<li>{this.props.Actors}</li>
+<li>{this.props.Plot}</li>
+<li>{this.props.Language}</li>
+<li>{this.props.Country}</li>
+<li>{this.props.Awards}</li>
+<li><img src= {this.props.Poster}/></li>
+<li>{this.props.Metascore}</li>
+<li>{this.props.imdbRating}</li>
+<li>{this.props.imdbVotes}</li>
+<li>{this.props.Type}</li>
+<li>{this.props.Response}</li>
+</div>
+
     );
   }
 });
@@ -13,9 +35,14 @@ var Result=React.createClass({
 console.log("L12 type is " + typeof this.props.searchResults);
 console.log("L13 string is " + JSON.stringify(this.props.searchResults));
 
-  var resultItems=this.props.searchResults.map(function(result){
-console.log("L16 " + result.imdbID + " "+ result.Director );
-    return <ResultItems key={result.imdbID} Director={result.Director} />
+    var resultItems=this.props.searchResults.map(function(result){
+    console.log("L16 " + result.imdbID + " "+ result.Director );
+    return <ResultItems key={result.imdbID}  Title= {result.Title}
+    Year= {result.Year} Rated= {result.Rated} Released= {result.Released} Runtime= {result.Runtime}
+    Genre= {result.Genre} Director={result.Director} Writer= {result.Writer} Actors= {result.Actors}
+    Plot= {result.Plot} Language= {result.Language} Country={result.Country} Awards= {result.Awards}
+    Poster= {result.Poster} Metascore= {result.Metascore} imdbRating= {result.imdbRating}
+     imdbVotes= {result.imdbVotes} Type= {result.Type} Response= {result.Response} />
 
     });
 
